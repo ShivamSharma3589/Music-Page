@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* body style goes here */
+body{
+    background: black url('images/arijit.jpg') center center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    outline:none;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+/* To declare varible for common colors in page  */
+:root{
+    --color1:rgb(59, 255, 255);
+    --color2:rgb(0, 182, 173);
+    --color3:rgb(24, 121, 212);
+    --color4:rgb(132, 0, 255);
+    --color5:black;
+    --color6:rgb(255, 196, 0);
+}
+/* header style goes here */
+header{
+    color: var(--color6);
+    text-shadow: 0px 0px 10px var(--color1),1px 1px 5px var(--color2),-1px -1px 5px var(--color3),2px 2px 2px black;
+    position: absolute;
+    z-index: 10;
+    text-align: center;
+    top: 0;
+    font-variant: small-caps;
+    font-size: 1.5rem;
+    font-family: 'Baloo Thambi 2', cursive;
+    animation: header 10s ease-in-out 0 alternate both;
+    cursor: pointer;
+    line-height: .9;
+    padding: 7px 0 0;
+}
+/* progress bar goes here */
+#progress,#bar{
+    background-color: rgba(0, 0, 0, 0.089);
+    padding: 2px 0;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index:11;
+}
+#bar{
+    background: linear-gradient(90deg,red ,rgb(255, 196, 0),rgb(255, 94, 121) 80%);
+    width: 50%;
+    border-radius: 10px;
+}
+/* animation for changing colors of header */
+@keyframes header{
+    0%{color: white;}
+    10%{color: red;}
+    20%{color: rgb(255, 102, 0);}
+    30%{color:orange;}
+    40%{color : rgb(255, 208, 0);}
+    50%{color: yellow;}
+    60%{color:rgb(207, 255, 112);}
+    70%{color: rgb(0, 255, 179);}
+    75%{color: rgb(38, 0, 255);}
+    80%{color: rgb(153, 0, 255);}
+    90%{color: rgb(255, 0, 221);}
+    100%{color: rgb(255, 0, 76);}
+}
+/* visible section code goes here */
+#visible{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 13;
+    display: none;
+}
+/* controllers style goes here */
+#controllers{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.473);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#controllers div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+/* control icons style goes here */
+#controllers i{
+    margin: 7px;
+    font-size:2.7rem;
+    cursor: pointer;
+    text-shadow: 0px 0px 10px var(--color1),1px 1px 10px var(--color2),-1px -1px 10px var(--color3),2px 2px 10px black;
+}
+#controllers i[id="playButton"]{
+    font-size:4rem;
+}
+/* hovering for icon in controls goes here */
+#controllers i:hover{
+    color: rgb(179, 179, 179);
+}
+/* on click style for icons in controls goes here */
+#controllers i:active{
+    color: var(--color4);
+    text-shadow: none;
+}
+/* To keep the track of current platying song style goes here */
+#count{
+    position: fixed;
+    bottom: 0;
+    font-size: 1.8rem;
+    text-shadow: 0px 0px 10px var(--color1),1px 1px 15px var(--color2),-1px -1px 15px var(--color3),2px 2px 1px var(--color5);
+    color: var(--color6);
+    text-align: center;
+}
+/* media query for max width 600px goes here */
+@media (max-width:600px){
+    html{
+        font-size: 13px;
+    }
+    body{
+        background-image: url('phone/arijit.jpg');
+    }
+}
+@media (max-width:300px){
+    html{
+        font-size: 8px;
+    }
+    body{
+        background-image: url('phone/arijit.jpg');
+    }
+}

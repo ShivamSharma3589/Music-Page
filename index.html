@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" href="icon.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Love &hearts; Music</title>
+</head>
+<!-- body starts here -->
+<body id="body">
+    <!-- progress bar goes here -->
+    <div id="progress">
+        <div id="bar"></div>
+    </div>
+    <!-- header starts -->
+    <header id="header">
+        <!-- To show the artist name and song name  -->
+        <h1 id="artist">Arijit Singh</h1>
+        <h2 id="song">Ve Maahi</h2>
+    </header>
+    <section id="visible"></section>
+    <!-- controls to set the song -->
+    <div id="controllers">
+        <div>
+            <!-- To play previous song -->
+            <i id="previousPlay" class="fa fa-step-backward"></i>
+            <!-- for backwarding songs -->
+            <i id="backward"  class="fa fa-backward "></i>
+            <!-- To play/pause the song -->
+            <i id="playButton" class="fa fa-play-circle "></i>
+            <!-- for forwarding songs -->
+            <i id="forward" class="fa fa-forward"></i>
+            <!-- To play next song -->
+            <i id="nextPlay" class="fa fa-step-forward"></i>
+        </div>
+        <div>
+            <i id="loop" class="fa fa-repeat"></i>
+            <i id="hide" class="fa fa-eye-slash"></i>
+            <i id="volume" class="fa fa-volume-high"></i>
+        </div>
+        <p id="count">Loading...</p>
+    </div>
+    <!-- audio tag to play the music in loop -->
+    <audio id="myAudio" src="music/arijit singh/ve maahi.mp3"></audio>
+</body>
+</html>
+<!-- including main javascript -->
+<script src="mian.js"></script>
+<!-- including sweetalert link in page -->
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
