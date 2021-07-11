@@ -45,7 +45,7 @@ header{
 /* progress bar goes here */
 #progress,#bar{
     background-color: rgba(0, 0, 0, 0.089);
-    padding: 2px 0;
+    /* padding: 1px 0; */
     width: 100%;
     position: fixed;
     top: 0;
@@ -55,6 +55,15 @@ header{
     background: linear-gradient(90deg,red ,rgb(255, 196, 0),rgb(255, 94, 121) 80%);
     width: 50%;
     border-radius: 10px;
+}
+#ball{
+    padding: 2px;
+    border-radius: 50%;
+    width: 2px;
+    height: 2px;
+    position: relative;
+    left: 99.5%;
+    background-color: rgb(255, 255, 255);
 }
 /* animation for changing colors of header */
 @keyframes header{
