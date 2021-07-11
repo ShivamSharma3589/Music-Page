@@ -61,14 +61,14 @@ const lists = [
         phone: "url('phone/dua.jpg')",
         songName: "Don't Start Now",
         artistName: "Dua Lipa",
-        song: "music/dua lipa/break my heart.m4a"
+        song: "music/dua lipa/dont start now.m4a"
     },
     {
         image: "url('images/dua.jpg')",
         phone: "url('phone/dua.jpg')",
         songName: "Break My Heart",
         artistName: "Dua Lipa",
-        song: "music/dua lipa/levitating.m4a"
+        song: "music/dua lipa/break my heart.m4a"
     },
     {
         image: "url('images/dua.jpg')",
@@ -507,13 +507,13 @@ setInterval(() => { // progress bar
 function network() {    //function network state goes here
     var net = myAudio.networkState;
     if (net == 0) {
-        return 'Loading...';
+        return 'Buffering...';
     } else
         if (net == 1) {
             return '<i class="far fa-music"></i>';
         } else
             if (net == 2) {
-                return 'Fetching...';
+                return 'Loading...';
             } else {
                 return 'No Audio Source Found';
             }
