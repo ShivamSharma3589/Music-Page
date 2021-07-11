@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,14 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet">
     <link rel="icon" href="icon.jpg" type="image/icon type">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
+    <!-- including sweetalert link in page -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <link rel="stylesheet" href="style.css">
     <title>Love &hearts; Music</title>
 </head>
 <!-- body starts here -->
+
 <body id="body">
     <!-- progress bar goes here -->
     <div id="progress">
-        <div id="bar"></div>
+        <div id="bar">
+            <div id="ball"></div>
+        </div>
     </div>
     <!-- header starts -->
     <header id="header">
@@ -32,7 +38,7 @@
             <!-- To play previous song -->
             <i id="previousPlay" class="fa fa-step-backward"></i>
             <!-- for backwarding songs -->
-            <i id="backward"  class="fa fa-backward "></i>
+            <i id="backward" class="fa fa-backward "></i>
             <!-- To play/pause the song -->
             <i id="playButton" class="fa fa-play-circle "></i>
             <!-- for forwarding songs -->
@@ -50,8 +56,7 @@
     <!-- audio tag to play the music in loop -->
     <audio id="myAudio" src="music/arijit singh/ve maahi.mp3"></audio>
 </body>
+
 </html>
 <!-- including main javascript -->
 <script src="mian.js"></script>
-<!-- including sweetalert link in page -->
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
