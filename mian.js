@@ -1,5 +1,4 @@
-// list goes up here
-const lists = [
+const lists = [     // list goes up here
     {
         image: "url('images/arijit.jpg')",
         phone: "url('phone/arijit.jpg')",
@@ -403,14 +402,12 @@ const lists = [
 
 // function when window gets load
 window.onload = () => {
-    // sweet alert
-    // Swal.fire(
-    //     'Welcome\nTo My Music Page',
-    //     'To show/hide the Player<br><b>Click on the Heading Above.</b> ',
-    //     'success'
-    //   );
-    // to track the current playying song
-    track();
+    Swal.fire({       // sweet alert
+        title: "Welcome\nTo My Music Page",
+        text: "<b>The Player is Ready To Use</b>",
+        icon: "success",
+    });
+    track();     // to track the current playying song
 }
 //variables to capture all the id's
 let index = 0;  //to keep the index of playing song
@@ -491,11 +488,11 @@ function playPrevious() {   // To play previous song
     }
     toggle();
 }
-//function for forward song by 5 seconds goes here
+//function for forward song by 10 seconds goes here
 function Forward() {
     myAudio.currentTime = myAudio.currentTime + 10;
 }
-//funtion for backward song by 5 seconds goes here
+//funtion for backward song by 10 seconds goes here
 function Backward() {
     myAudio.currentTime = myAudio.currentTime - 10;
 }
