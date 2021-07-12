@@ -461,7 +461,7 @@ const lists = [     // list goes up here
 window.onload = () => {
     Swal.fire({       // sweet alert
         title: "Welcome\nTo My Music Page",
-        text: "<b>The Player is Ready To Use</b>",
+        text: "The Player is Ready To Use",
         icon: "success",
     });
     track();     // to track the current playying song
