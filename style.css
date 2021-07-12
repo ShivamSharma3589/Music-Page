@@ -140,6 +140,9 @@ header{
     body{
         background-image: url('phone/arijit.jpg');
     }
+    #controllers i:hover{
+    color: white;
+}
 }
 @media (max-width:300px){
     html{
