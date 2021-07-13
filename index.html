@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="icon.jpg" id="favicon" sizes="16x16" type="image/icon type">
+    <link rel="icon" href="icon.jpg"  sizes="16x16" type="image/icon type">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
     <!-- including sweetalert link in page -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
@@ -50,8 +50,16 @@
             <i id="loop" class="fa fa-repeat"></i>
             <i id="hide" class="fa fa-eye-slash"></i>
             <i id="volume" class="fa fa-volume-high"></i>
+            <i id="show" class="fas fa-bars"></i>
         </div>
         <p id="count">Loading...</p>
+    </div>
+    <div id="lcontainer">
+        <div>
+        <i id="downButton" class="fas fa-angle-down"></i>
+        <h2 id="tracks">Tracks</h2>
+        </div>
+        <div id="list-container"></div>
     </div>
     <!-- audio tag to play the music in loop -->
     <audio id="myAudio" src="music/arijit singh/ve maahi.mp3"></audio>
