@@ -458,7 +458,7 @@ function playPause() {  // funtion to play pause music
         header.style.animationIterationCount = '0';
         playButton.className = 'fa fa-play-circle '
         myAudio.pause();
-        isplay = true;
+        isplay = false;
     }
     track();
 }
