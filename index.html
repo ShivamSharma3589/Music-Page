@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@500&display=swap" rel="stylesheet">
-    <link rel="icon" href="icon.jpg"  sizes="16x16" type="image/icon type">
+    <link rel="icon" href="icon.jpg" sizes="16x16" type="image/icon type">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta1/css/all.css">
     <!-- including sweetalert link in page -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
@@ -52,12 +52,18 @@
             <i id="volume" class="fa fa-volume-high"></i>
             <i id="show" class="fas fa-bars"></i>
         </div>
+        <!-- added a new progress bar -->
+        <div id="rangeDiv">
+            <span id="current">0:00</span>
+            <input type="range" name="" id="range" value=0>
+            <span id="duration">4:00</span>
+        </div>
         <p id="count">Loading...</p>
     </div>
     <div id="lcontainer">
         <div>
-        <i id="downButton" class="fas fa-angle-down"></i>
-        <h2 id="tracks">Tracks</h2>
+            <i id="downButton" class="fas fa-angle-down"></i>
+            <h2 id="tracks">Tracks</h2>
         </div>
         <div id="list-container"></div>
     </div>
