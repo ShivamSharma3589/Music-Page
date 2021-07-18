@@ -419,8 +419,6 @@ let index = 0;  //to keep the index of playing song
 let isplay = false; //to check song is playying or not
 let myAudio = document.getElementById('myAudio');
 let playButton = document.getElementById('playButton');
-let forward = document.getElementById('forward');
-let backward = document.getElementById('backward');
 let artist = document.getElementById("artist");
 let song = document.getElementById("song");
 var x = window.matchMedia("(max-width: 650px)");
@@ -504,14 +502,6 @@ function playPrevious() {   // To play previous song
         index = Math.floor(Math.random() * lists.length);
     }
     toggle();
-}
-//function for forward song by 10 seconds goes here
-function Forward() {
-    myAudio.currentTime = myAudio.currentTime + 10;
-}
-//funtion for backward song by 10 seconds goes here
-function Backward() {
-    myAudio.currentTime = myAudio.currentTime - 10;
 }
 setInterval(() => { // progress bar
     bar.style.width = `${(myAudio.currentTime / myAudio.duration) * 100}%`;
@@ -648,8 +638,6 @@ loop.onclick = () => {  //Autoplay features code goes here
         counterPlay = 1;
     }
 }
-forward.addEventListener('click', Forward);//forward click button
-backward.addEventListener('click', Backward);// backward click button
 listContainer.addEventListener('click', event => {
     listPlay();
     toggle();
