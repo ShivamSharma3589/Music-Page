@@ -106,6 +106,10 @@ header{
     align-items: center;
     margin-bottom: 5px;
 }
+#previousPlay,#nextPlay{
+    font-size:3rem;
+    padding: 5px 1rem;
+}
 /* main progress bar code goes here */
 #rangeDiv{
     margin:20px auto;
@@ -117,9 +121,29 @@ header{
     -webkit-appearance: none;
     height: 0.3rem;
     background-color:white;
+    border-radius: 50px;
     cursor:pointer;
 }
-#range::-webkit-slider-runnable-track,#range::-moz-range-track {
+#range::-webkit-slider-runnable-track{
+  cursor:pointer;
+  width: 100%;
+  height: 0.3rem;
+  box-shadow: 0px 0px 10px var(--color1);
+  background:white;
+  border-radius: 50px;
+  border: 1px solid var(--color1);
+}
+#range::-webkit-slider-thumb  {
+  box-shadow: 1px 1px 1px #000000;
+  border: 2px solid teal;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: white;
+  -webkit-appearance: none;
+  margin:-0.5rem;
+}
+#range::-moz-range-track {
   cursor:pointer;
   width: 100%;
   height: 0.3rem;
@@ -128,7 +152,7 @@ header{
   border-radius: 5px;
   border: 1px solid var(--color1);
 }
-#range::-webkit-slider-thumb ,#range::-moz-range-thumb {
+#range::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000000;
   border: 2px solid teal;
   height: 17px;
@@ -198,9 +222,7 @@ header{
 }
 #downButton{
     display: none;
-    text-align: center;
-    font-size: 2rem;
-    padding: 1rem;
+    padding:1.5rem;
     cursor: pointer;
 }
 /* To keep the track of current platying song code goes here */
@@ -219,7 +241,6 @@ header{
 .label{
     border-bottom:1px solid rgba(255, 255, 255, 0.336) ;
     display: block;
-    /* background-color: red; */
     width: 100%;
     margin: 0;
     cursor:pointer;
@@ -255,14 +276,7 @@ header{
     }
     #downButton{
         display: inline-block;
-        width: 7%;
         text-shadow: 0px 0px 10px rgb(0, 255, 255);
-        transition: all .2s ease-in-out;
-    }
-    #downButton:hover{
-        color: rgb(0, 255, 255);
-        text-shadow: none;
-        transform: scale(1.2);
     }
     .label:hover{
         color:white;
