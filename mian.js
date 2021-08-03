@@ -560,8 +560,16 @@ function automatic() {  //function for shuffle mode
 function listCreate(value) {
     let listItem = document.createElement('div');
     listItem.innerHTML = `<label class="label" for="item-${value}">
-                        ${lists[value].songName}</label><br>
-                        <input class="input" type="radio" id="item-${value}" name="songs-list">`
+                                <div>${lists[value].songName}<br>
+                                    <span>- ${lists[value].artistName}</span>
+                                </div>
+                                <div>
+                                    <a href="${lists[value].song}" download>
+                                        <i class="fa fa-download"></i>
+                                    </a>
+                                </div>
+                          </label><br>
+                          <input class="input" type="radio" id="item-${value}" name="songs-list">`;
     listContainer.appendChild(listItem);
 }
 function listPlay() {   //to change the color of chosen song
